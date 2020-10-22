@@ -2,7 +2,7 @@
 
 <img src="dihcl_thumbnail.png">
 
-## PyTorch Code for NeurIPS 2020 paper:
+## NeurIPS 2020 paper:
 
 <b>Title</b>: <i>Curriculum Learning by Dynamic Instance Hardness</i> <a href="./paper/dihcl_neurips2020_main.pdf">[pdf]</a>\
 <b>Authors</b>:Tianyi Zhou, Shengjie Wang, Jeff A. Bilmes\
