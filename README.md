@@ -20,6 +20,8 @@
 <b>Abstract</b>\
 A good teacher can adjust the curriculum based on students' learning history. By analogy, in this paper, we study the dynamics of a deep neural network's (DNN) performance on individual samples during its learning process. The observed properties allow us to develop an adaptive curriculum that leads to faster learning of more accurate models. We introduce dynamic instance hardness (DIH), the exponential moving average of a sample's instantaneous hardness (e.g., a loss, or a change in outputs) over the training history. A low DIH indicates that a model retains knowledge about a sample over time, and implies a flat loss landscape for that sample. Moreover, for DNNs, we find that a sample's DIH early in training predicts its DIH in later stages. Hence, we can train a model using samples with higher DIH and safely ignore those with lower DIH. This motivates a DIH guided curriculum learning (DIHCL). Compared to existing CL methods: (1) DIH is more stable over time than using only instantaneous hardness, which is noisy due to stochastic training and DNN's non-smoothness; (2) DIHCL is computationally inexpensive since it uses only a byproduct of back-propagation and thus does not require extra inference. On 11 datasets, DIHCL significantly outperforms random mini-batch SGD and recent CL methods in terms of efficiency and final performance.
 
+<img src="exp_table.png">
+
 ## Usage 
 
 ### Prerequisites
@@ -41,8 +43,6 @@ A good teacher can adjust the curriculum based on students' learning history. By
 - Centrality is an alternative of the facility location function in the paper in order to encourage diversity. The latter requires an external submodular maximization library and extra computation, compared to the centrality used here. We may add the option of submodular maximization in the future, but the centrality performs good enough on most tested tasks.
 - Self-supervised learning may help in some scenarios. Two types of self-supervision regularizations are supported, i.e., `--consistency` and `--contrastive`.
 - If one is interested to try DIHCL on noisy-label learning (though not the focus of the paper), set `--use_noisylabel` and specify the noisy type and ratio using `--label_noise_type` and `--label_noise_rate`.
-
-<img src="exp_table.png">
 
 <b>License</b>\
 This project is licensed under the terms of the MIT license.
