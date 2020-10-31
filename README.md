@@ -5,7 +5,7 @@
 ## NeurIPS 2020 paper:
 
 <b>Title</b>: <i>Curriculum Learning by Dynamic Instance Hardness</i> <a href="./paper/dihcl_neurips2020_main.pdf">[pdf]</a> <a href="./paper/dihcl_neurips2020_appendix.pdf">[appendix]</a> <a href="./paper/dihcl_neurips2020_slides.pdf">[slides]</a>\
-<b>Authors</b>:Tianyi Zhou, Shengjie Wang, Jeff A. Bilmes\
+<b>Authors</b>: Tianyi Zhou, Shengjie Wang, Jeff A. Bilmes\
 <b>Institute</b>: University of Washington, Seattle
 
 <pre>
