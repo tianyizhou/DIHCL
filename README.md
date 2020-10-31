@@ -4,7 +4,7 @@
 
 ## NeurIPS 2020 paper:
 
-<b>Title</b>: <i>Curriculum Learning by Dynamic Instance Hardness</i> <a href="./paper/dihcl_neurips2020_main.pdf">[pdf]</a>\
+<b>Title</b>: <i>Curriculum Learning by Dynamic Instance Hardness</i> <a href="./paper/dihcl_neurips2020_main.pdf">[pdf]</a> <a href="./paper/dihcl_neurips2020_appendix.pdf">[appendix]</a> <a href="./paper/dihcl_neurips2020_slides.pdf">[slides]</a>\
 <b>Authors</b>:Tianyi Zhou, Shengjie Wang, Jeff A. Bilmes\
 <b>Institute</b>: University of Washington, Seattle
 
@@ -26,6 +26,7 @@ A good teacher can adjust the curriculum based on students' learning history. By
 - [Python 3.7.4](https://www.python.org/)
 - [PyTorch 1.1.0](https://pytorch.org/)
 - [Numpy 1.17.2](http://www.numpy.org/)
+- [Scikit-Learn 0.22.1](https://scikit-learn.org/)
 - [Progress 1.5](https://github.com/verigak/progress/)
 - [Pillow 6.2.2](https://pillow.readthedocs.io/en/stable/)
 
