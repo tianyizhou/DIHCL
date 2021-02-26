@@ -30,10 +30,10 @@ import torch.utils.data.sampler as sampler
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
-import models.cifar as models
-model_names = sorted(name for name in models.__dict__
-    if not name.startswith("__")
-    and callable(models.__dict__[name]))
+# import models.cifar as models
+# model_names = sorted(name for name in models.__dict__
+#     if not name.startswith("__")
+#     and callable(models.__dict__[name]))
 
 parser = argparse.ArgumentParser(description='Curriculum Learning by Dynamic Instance Hardness (DIHCL)')
 parser.add_argument('-d', '--dataset', type=str, default='CIFAR10')
@@ -445,7 +445,7 @@ def main():
                     args.mod *= args.mod_rate
                     batches_per_epoch = np.ceil(float(subset_size) / float(args.train_batch))
                 else:
-                    batches_per_epoch = np.ceil(float(k) / float(args.train_batch))
+                    batches_per_epoch = np.ceil(float(k0) / float(args.train_batch))
                 args.mod *= args.mod_rate
                 args.tmpt = max(1., args.tmpt_rate * args.tmpt)
                 args.alpha = min(1., args.alpha_rate * args.alpha)
